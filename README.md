@@ -11,7 +11,11 @@ Time promoting i would like to make fields for the parts having someway to tell 
 
 
 What has been done:
-- created a new project for Thymeleaf and started to procced with printing out hello world to the localHost
--Packages have been made with the start of a ComputerController
-- computer.html has been made and connected with thymeleaf.org
+- Created a new project for Thymeleaf and started to procced with printing out hello world to the localHost
+- Packages have been made with the start of a ComputerController
+- Computer.html has been made and connected with thymeleaf.org
     created hello world and displayed it as a header.
+- Created a ArrayList to test table
+- Table working but information from ArrayList is NOT.computer
+- Found an error with names of variable and now fixed.
+- Moving on to create database instead of ArrayList.
