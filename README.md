@@ -27,4 +27,6 @@ What has been done:
 - Set up test computers to save to the ComputerRepository.
 - Using UUID now for auto generated computer id's, set up and running fine.
 - Runs and testComputers are show in the h2-console.
--
+- Created ComputerService and made methods for getComputers,getComputer, save and delete.
+- A Page layout is been used for getComputers
+- H2 console still functioning.
