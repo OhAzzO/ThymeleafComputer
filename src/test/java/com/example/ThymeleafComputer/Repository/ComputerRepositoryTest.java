@@ -31,7 +31,6 @@ public class ComputerRepositoryTest {
 
         final Computer actual = entityManager.find(Computer.class, saved.getComputerId());
 
-
         assertThat(actual).isEqualTo(expected);
     }
 }

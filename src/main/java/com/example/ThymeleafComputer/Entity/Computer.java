@@ -27,6 +27,6 @@ public class Computer {
     private String systemComponents;
 
     @Column(name = "c_price")
-    private double price;
+    private long price;
 
 }
