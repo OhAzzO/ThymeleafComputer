@@ -34,3 +34,5 @@ What has been done:
 - Added test case for the save method in the ComputerRepositoryTest and has passed.
 - Added test case for ComputerServiceTest - getComputersReturnComputer_WhenComputerDoesExist and test has passed.
 - Added test case for ComputerServiceTest - getComputersReturnComputer_WhenComputerDoesNotExist and test has passed.
+- Added test case for ComputerServiceTest - save_ReturnWhenComputerIsCreated and test has passed.
+-

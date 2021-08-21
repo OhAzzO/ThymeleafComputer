@@ -65,4 +65,32 @@ public class ComputerServiceTest {
         then(computerRepository).should().findById(computerId);
         then(computerRepository).shouldHaveNoMoreInteractions();
     }
+
+    // Test method to save and return when record is created.
+    @Test
+    public void save_ReturnWhenComputerIsCreated() {
+
+        final UUID computerId = randomUUID();
+
+        final Computer expected = new Computer();
+        expected.setOverview(randomUUID().toString());
+        expected.setSystemComponents(randomUUID().toString());
+        expected.setPrice(randomUUID().getMostSignificantBits());
+
+        given(computerRepository.save(expected)).willAnswer(invocation -> {
+
+           final Computer toSave = invocation.getArgument(0);
+
+           toSave.setComputerId(computerId);
+
+           return toSave;
+        });
+
+        final Computer actual = fixture.save(expected);
+
+        assertThat(actual).isEqualTo(expected);
+
+        then(computerRepository).should().save(expected);
+        then(computerRepository).shouldHaveNoMoreInteractions();
+    }
 }
