@@ -49,4 +49,20 @@ public class ComputerServiceTest {
         then(computerRepository).shouldHaveNoMoreInteractions();
     }
 
+    // Test method to get and return computer when one does not exist.
+    @Test
+    public void getReturnComputer_WhenComputerDoesNotExist() {
+        final UUID computerId = randomUUID();
+
+        final Optional<Computer> expected = Optional.empty();
+
+        given(computerRepository.findById(computerId)).willReturn(expected);
+
+        Optional<Computer> actual = fixture.getComputer(computerId);
+
+        assertThat(actual).isEqualTo(expected);
+
+        then(computerRepository).should().findById(computerId);
+        then(computerRepository).shouldHaveNoMoreInteractions();
+    }
 }

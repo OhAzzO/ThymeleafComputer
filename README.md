@@ -31,6 +31,6 @@ What has been done:
 - A Page layout is been used for getComputers
 - H2 console still functioning.
 - Created test packages and classes (need to check structure ie- src/test/testPackage).
-- Put in Test case for the save method in the ComputerRepositoryTest and has passed.
-- Put in test case for getComputersReturnComputer_WhenComputerDoesExist and test has passed.
--
+- Added test case for the save method in the ComputerRepositoryTest and has passed.
+- Added test case for ComputerServiceTest - getComputersReturnComputer_WhenComputerDoesExist and test has passed.
+- Added test case for ComputerServiceTest - getComputersReturnComputer_WhenComputerDoesNotExist and test has passed.
