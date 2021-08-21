@@ -35,4 +35,5 @@ What has been done:
 - Added test case for ComputerServiceTest - getComputersReturnComputer_WhenComputerDoesExist and test has passed.
 - Added test case for ComputerServiceTest - getComputersReturnComputer_WhenComputerDoesNotExist and test has passed.
 - Added test case for ComputerServiceTest - save_ReturnWhenComputerIsCreated and test has passed.
+- Added test case for ComputerServiceTest - deleteComputer_WhenExists and test has passed.
 -

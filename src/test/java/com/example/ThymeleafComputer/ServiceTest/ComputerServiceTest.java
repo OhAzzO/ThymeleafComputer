@@ -14,8 +14,7 @@ import java.util.UUID;
 
 import static java.util.UUID.randomUUID;
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.mockito.BDDMockito.given;
-import static org.mockito.BDDMockito.then;
+import static org.mockito.BDDMockito.*;
 
 @ExtendWith(SpringExtension.class)
 public class ComputerServiceTest {
@@ -93,4 +92,19 @@ public class ComputerServiceTest {
         then(computerRepository).should().save(expected);
         then(computerRepository).shouldHaveNoMoreInteractions();
     }
+
+    // Test method to delete computers when exists.
+    @Test
+    public void deleteComputer_WhenExists() {
+
+        final UUID computerId = randomUUID();
+
+        willDoNothing().given(computerRepository).deleteById(computerId);
+
+        fixture.delete(computerId);
+
+        then(computerRepository).should().deleteById(computerId);
+        then(computerRepository).shouldHaveNoMoreInteractions();
+    }
+
 }
