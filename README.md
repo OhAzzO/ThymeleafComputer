@@ -30,3 +30,6 @@ What has been done:
 - Created ComputerService and made methods for getComputers,getComputer, save and delete.
 - A Page layout is been used for getComputers
 - H2 console still functioning.
+- Created test packages and classes (need to check structure ie- src/test/testPackage).
+- Test for the ComputerRepository save method has passed .
+-
