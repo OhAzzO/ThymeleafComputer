@@ -19,3 +19,8 @@ What has been done:
 - Table working but information from ArrayList is NOT.computer
 - Found an error with names of variable and now fixed.
 - Moving on to create database instead of ArrayList.
+- Repository made.
+- ArrayList has been removed.
+- Added Computer properties(computerId, overview, systemComponents and price).
+- Added @Column to properties with there own name using c_property (c=computer).
+- I have added Lombok to dependencies( as my mentor suggested me to use it)
