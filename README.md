@@ -23,4 +23,8 @@ What has been done:
 - ArrayList has been removed.
 - Added Computer properties(computerId, overview, systemComponents and price).
 - Added @Column to properties with there own name using c_property (c=computer).
-- I have added Lombok to dependencies( as my mentor suggested me to use it)
+- I have added Lombok to dependencies( as my mentor suggested me to use it).
+- Set up test computers to save to the ComputerRepository.
+- Using UUID now for auto generated computer id's, set up and running fine.
+- Runs and testComputers are show in the h2-console.
+-

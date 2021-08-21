@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.UUID;
 
 @Entity
 @Table(name = "computer")
@@ -17,7 +18,7 @@ public class Computer {
     @Id
     @GeneratedValue(generator = "UUID")
     @Column(name = "c_computerId")
-    private int computerId;
+    private UUID computerId;
 
     @Column(name = "c_overview")
     private String overview;
