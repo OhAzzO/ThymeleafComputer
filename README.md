@@ -51,3 +51,5 @@ What has been done:
 - Played around with the style of the table.
 - Added a second computer to test table-striped and table-hover (both successful).
 - Added 2 extra buttons for Previous and next.
+- Created add.html for the add computer function.
+- Added same layout from computerList and changed it to suit add computer.

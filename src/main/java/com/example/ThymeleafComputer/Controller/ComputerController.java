@@ -21,4 +21,24 @@ public class ComputerController {
 
         return "computers/computerList";
     }
+
+    @GetMapping("/computers/add")
+    public String add() {
+        return "computers/add";
+    }
+
+    @GetMapping("/computers/view")
+    public String view() {
+        return "computers/view";
+    }
+
+    @GetMapping("/computers/edit")
+    public String edit() {
+        return "computers/edit";
+    }
+
+    @GetMapping("/computers/remove")
+    public String remove() {
+        return "computers/remove";
+    }
 }
