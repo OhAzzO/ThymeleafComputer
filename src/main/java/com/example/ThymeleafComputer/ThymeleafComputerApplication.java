@@ -22,6 +22,7 @@ public class ThymeleafComputerApplication {
 
 	@Bean
 	public ApplicationRunner runComputer() {
+
 		final Computer firstComputer = new Computer(UUID.randomUUID(), "test overview 1", "test system components 1", 100);
 		final Computer secondComputer = new Computer(UUID.randomUUID(), "test overview 2", "test system components 2", 200);
 		final Computer thirdComputer = new Computer(UUID.randomUUID(), "test overview 3", "test system components 3", 300);

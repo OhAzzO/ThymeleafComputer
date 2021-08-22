@@ -28,11 +28,11 @@ public class ComputerService {
     public Optional<Computer> getComputer(final UUID computerId) {
         return computerRepository.findById(computerId);
     }
-
+    // Save computer
     public Computer save(final Computer computer) {
         return computerRepository.save(computer);
     }
-
+    // Delete computer
     public void delete(final UUID computerId) {
         computerRepository.deleteById(computerId);
     }
