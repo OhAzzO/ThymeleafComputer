@@ -41,13 +41,13 @@ Time promoting i would like to make fields for the parts having someway to tell 
 - Made a Controller package and class ComputerController inside package.
 
     UI
-- Created created new resource Directory "templates.computers"
-- Added Html file "computerList" to show information.
+- Added new resource Directory "templates.computers"
+- Created computerList.html to show information to the UI.
 - Connected to thymeleaf and displaying a simple welcome message.
 - Played around to add font to message.
 - Added a bootstrap layout and deleted any un wanted properties.
 - Put a Exit button (might need to change it to back/home)
-- Created table and populated it with a test case.
+- added table and populated it with a test case.
 - Put some extra buttons view/edit/remove for test computer.
 - Put in some bootstrap style for the buttons for computer.
 - Played around with the style of the table.
@@ -56,4 +56,7 @@ Time promoting i would like to make fields for the parts having someway to tell 
 - Created add.html for the add computer function.
 - Added same layout from computerList and changed it to suit add computer.
 - Created view.html to view selected computer.
-- used  add.html as they are very similar expect a button and minor style changes.
+- Used  add.html as they are very similar expect a button and minor style changes.
+- Created edit.html to edit computer in the database.
+- Used add.html with minor changes
+- Added alert to show when no computers are found to edit/view.
