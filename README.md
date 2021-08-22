@@ -42,3 +42,6 @@ What has been done:
 - Created created new resource Directory "templates.computers"
 - Added Html file "computerList" to show information.
 - Connected to thymeleaf and displaying a simple welcome message.
+- Played around to add font to message.
+- Added a bootstrap layout and deleted any un wanted properties.
+- Put a Exit button (might need to change it to back/home)
