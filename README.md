@@ -10,7 +10,7 @@ planning to have a submitting page that will have details about users computer b
 Time promoting i would like to make fields for the parts having someway to tell they are compatible or not.
 
 
-What has been done:
+    What has been done:
 - Created a new project for Thymeleaf and started to proceed with printing out hello world to the localHost
 - Packages have been made with the start of a ComputerController
 - Computer.html has been made and connected with thymeleaf.org
@@ -39,6 +39,8 @@ What has been done:
 - Added test case for ComputerServiceTest - save_ReturnWhenComputerIsCreated and test has passed.
 - Added test case for ComputerServiceTest - deleteComputer_WhenExists and test has passed.
 - Made a Controller package and class ComputerController inside package.
+
+    UI
 - Created created new resource Directory "templates.computers"
 - Added Html file "computerList" to show information.
 - Connected to thymeleaf and displaying a simple welcome message.
@@ -53,3 +55,5 @@ What has been done:
 - Added 2 extra buttons for Previous and next.
 - Created add.html for the add computer function.
 - Added same layout from computerList and changed it to suit add computer.
+- Created view.html to view selected computer.
+- used  add.html as they are very similar expect a button and minor style changes.
