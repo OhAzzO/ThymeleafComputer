@@ -48,3 +48,6 @@ What has been done:
 - Created table and populated it with a test case.
 - Put some extra buttons view/edit/remove for test computer.
 - Put in some bootstrap style for the buttons for computer.
+- Played around with the style of the table.
+- Added a second computer to test table-striped and table-hover (both successful).
+- Added 2 extra buttons for Previous and next.
