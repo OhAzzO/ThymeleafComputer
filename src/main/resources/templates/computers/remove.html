@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Computer Compare List</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+        body {
+            font-family: 'Roboto Slab', serif;
+        }
+
+
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <h1>SaveYourSpecs</h1>
+
+        <div class="d-flex">
+            <button type="button" class="btn btn-primary">Exit</button>
+        </div>
+    </div>
+</nav>
+
+<br/>
+<br/>
+
+<div class="container-sm">
+
+    <h2 class="navbar-brand">Remove Computer</h2>
+
+    <div class="alert alert-danger" role="alert">
+        Computer not found.
+    </div>
+
+    <form action="#" method="post">
+        <div class="mb=3">
+            <label for="overview" class="form-label">Overview</label>
+            <input type="text" class="form-control" id="overview" disabled="true"/>
+        </div>
+        </br>
+        <div class="mb=3">
+            <label for="systemComponents" class="form-label">System Components</label>
+            <input type="text" class="form-control" id="systemComponents" disabled="true"/>
+        </div>
+        </br>
+        <div class="mb=3">
+            <label for="price" class="form-label">Price</label>
+            <input type="text" class="form-control" id="price" disabled="true"/>
+        </div>
+        </br>
+        <input type="submit" class="btn btn-danger" value="Remove"/>
+        <a class="btn btn-outline-primary" href="#" role="button">Home</a>
+    </form>
+</div>
+</body>
+
+</html>

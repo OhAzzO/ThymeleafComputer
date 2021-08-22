@@ -60,3 +60,5 @@ Time promoting i would like to make fields for the parts having someway to tell 
 - Created edit.html to edit computer in the database.
 - Used add.html with minor changes
 - Added alert to show when no computers are found to edit/view.
+- Created remove.html using view.html with slight changed to a button.
+- UI completed (for now).
