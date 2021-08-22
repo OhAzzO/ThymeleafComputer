@@ -45,3 +45,6 @@ What has been done:
 - Played around to add font to message.
 - Added a bootstrap layout and deleted any un wanted properties.
 - Put a Exit button (might need to change it to back/home)
+- Created table and populated it with a test case.
+- Put some extra buttons view/edit/remove for test computer.
+- Put in some bootstrap style for the buttons for computer.
