@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class ComputerController {
 
-    static final int DEFAULT_PAGE_SIZE = 2;
+    static final int DEFAULT_PAGE_SIZE = 5;
 
     private final ComputerService computerService;
 
@@ -38,14 +38,17 @@ public class ComputerController {
         final int previousPageNumber = page.hasPrevious() ? currentPageNumber - 1 : -1;
         final int nextPageNumber = page.hasNext() ? currentPageNumber + 1 : -1;
 
-        model.addAttribute("computer", page.getContent());
+        model.addAttribute("computers", page.getContent());
         model.addAttribute("previousPageNumber", previousPageNumber);
         model.addAttribute("nextPageNumber", nextPageNumber);
         return "computers/computerList";
     }
 
     @GetMapping("/computers/add")
-    public String add() {
+    public String add(final Model model) {
+
+        model.addAttribute("computer", new Computer());
+
         return "computers/add";
     }
 

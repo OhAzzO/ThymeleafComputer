@@ -62,3 +62,6 @@ Time promoting i would like to make fields for the parts having someway to tell 
 - Added alert to show when no computers are found to edit/view.
 - Created remove.html using view.html with slight changed to a button.
 - UI completed (for now).
+- Connected few buttons to corresponding pages
+- Connected previous/next buttons to flick through the file.
+- Got it back to a semi working state.
